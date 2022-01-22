@@ -1,1 +1,3 @@
-tempfile
+Buildpacks
+https://github.com/k16shikano/heroku-buildpack-poppler.git
+heroku/python
