@@ -1,7 +1,6 @@
 Flask==2.0.1
 pdf2image
 poppler-utils
-zipfile
 gunicorn==20.1.0
 ordereddict
 importlib-metadata==4.8.1
