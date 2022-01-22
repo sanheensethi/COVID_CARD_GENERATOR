@@ -66,7 +66,7 @@ def mask_image():
 	file = request.files['image'] ## byte file
 	file.save(f"./output/{name}/"+file.filename);
 	
-	pages = convert_from_path(f"./output/{name}/"+file.filename, 500,poppler_path = r"./poppler-22.01.0/Library/bin")
+	pages = convert_from_path(f"./output/{name}/"+file.filename, 500)
 	for page in pages:
 		page.save(f'./output/{name}/out.jpg', 'JPEG')
 	generateCard(name)
