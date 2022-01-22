@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YOLO-Object Detection</title>
+	<link rel="stylesheet" type="text/css" href="../static/index.css">
+	<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+<div class='App'>
+    <header class='App-header'>
+        <p><u>
+          Download and Delete Data
+        </u></p>
+        <div className="pre_img">
+          <span><img id="imagebox" src=""></span>
+        </div>
+        <h3> After Download , You have to delete your data</h3>
+        <form action="/download" method = "POST" enctype = "multipart/form-data">
+          <lable>Enter Mobile Number:</lable>
+          <input id="username" type="number" name="username">
+          <button name="send" id = "sendbutton">Download</button>
+        </form>
+        <hr>
+        <br>
+        <form action="/delete" method = "POST" enctype = "multipart/form-data">
+          <label>Enter Mobile Number:</label>
+          <input id="username" type="number" name="username">
+          <button name="send" id = "sendbutton">Delete</button>
+        </form>
+			 <h2>Information:</h2>
+       <ul>
+        <li>After Downloading, goto <a href="docs.google.com">Link</a></li>
+        <li>Upload the download images, set both on paper</li>
+        <li>Print the Paper</li>
+      </ul>
+	</header>
+</div>
+
+</body>
+</html>
